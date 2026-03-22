@@ -68,16 +68,28 @@ export function Contact() {
               }`}
             >
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Организатор</p>
-                <div className="flex items-center gap-3 mt-1">
-                  <img
-                    src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/d1e76704-486d-49df-929a-394167e057ab.jpg"
-                    alt="Марина"
-                    className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0"
-                  />
-                  <a href="tel:+79173539487" className="text-foreground hover:text-sage transition-colors">
-                    Марина · +7 917 353-94-87
-                  </a>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Организаторы</p>
+                <div className="flex flex-col gap-3 mt-1">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/d1e76704-486d-49df-929a-394167e057ab.jpg"
+                      alt="Марина"
+                      className="w-12 h-12 rounded-full object-cover object-top flex-shrink-0"
+                    />
+                    <a href="tel:+79173539487" className="text-foreground hover:text-sage transition-colors">
+                      Марина · +7 917 353-94-87
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/d278be0f-1db2-44d6-8a98-44ef23aa87b2.jpg"
+                      alt="Вероника"
+                      className="w-12 h-12 rounded-full object-cover object-center flex-shrink-0"
+                    />
+                    <a href="tel:+79162764771" className="text-foreground hover:text-sage transition-colors">
+                      Вероника · +7 916 276-47-71
+                    </a>
+                  </div>
                 </div>
               </div>
               <div>
