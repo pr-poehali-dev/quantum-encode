@@ -72,9 +72,9 @@ export function Contact() {
                 <div className="flex flex-col gap-3 mt-1">
                   <div className="flex items-center gap-3">
                     <img
-                      src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/d1e76704-486d-49df-929a-394167e057ab.jpg"
+                      src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/894e0e4b-b7a7-489e-a221-bbe939d68287.jpg"
                       alt="Марина"
-                      className="w-12 h-12 rounded-full object-cover object-[center_20%] flex-shrink-0"
+                      className="w-12 h-12 rounded-full object-cover object-center flex-shrink-0"
                     />
                     <a href="tel:+79173539487" className="text-foreground hover:text-sage transition-colors">
                       Марина · +7 917 353-94-87
