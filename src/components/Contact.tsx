@@ -3,34 +3,37 @@ import { useEffect, useRef, useState } from "react"
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
+  const [formState, setFormState] = useState({ name: "", email: "", message: "" })
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
+      ([entry]) => { if (entry.isIntersecting) setIsVisible(true) },
       { threshold: 0.1 },
     )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current)
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formState)
+    setStatus("loading")
+    try {
+      const res = await fetch("https://functions.poehali.dev/7cf26f19-b444-43e6-acb3-42e586a8462c", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      })
+      if (res.ok) {
+        setStatus("success")
+        setFormState({ name: "", email: "", message: "" })
+      } else {
+        setStatus("error")
+      }
+    } catch {
+      setStatus("error")
+    }
   }
 
   return (
@@ -184,11 +187,18 @@ export function Contact() {
                   required
                 />
               </div>
+              {status === "success" && (
+                <p className="text-sage text-sm">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</p>
+              )}
+              {status === "error" && (
+                <p className="text-terracotta text-sm">Ошибка отправки. Напишите нам напрямую.</p>
+              )}
               <button
                 type="submit"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
+                disabled={status === "loading" || status === "success"}
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Оставить заявку
+                {status === "loading" ? "Отправляем..." : "Оставить заявку"}
                 <svg
                   className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1"
                   fill="none"
