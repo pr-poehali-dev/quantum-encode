@@ -58,7 +58,7 @@ export function Contact() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Места ограничены — ретрит проходит в малой группе. Оставьте заявку, и организатор Марина свяжется с вами, чтобы ответить на все вопросы.
+              Места ограничены — ретрит проходит в малой группе. Оставьте заявку, и организаторы ответят на все вопросы.
             </p>
 
             {/* Contact Info */}
@@ -99,6 +99,38 @@ export function Contact() {
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Стоимость</p>
                 <p className="text-foreground">53 200 ₽ <span className="text-muted-foreground line-through text-sm ml-2">96 700 ₽</span></p>
+              </div>
+              <div>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Включено в стоимость</p>
+                <ul className="space-y-1.5">
+                  {[
+                    "Программа в сопровождении 2х тренеров и организаторов",
+                    "Питание (завтрак, обед, ужин)",
+                    "Трансфер от/до аэропорта",
+                    "Путешествие в место силы",
+                    "Баня",
+                    "Поддержка по завершению программы",
+                    "Проживание",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+                      <span className="text-sage mt-0.5 flex-shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Не включено</p>
+                <ul className="space-y-1.5">
+                  {[
+                    "Авиа, ж/д билеты",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="mt-0.5 flex-shrink-0">—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
