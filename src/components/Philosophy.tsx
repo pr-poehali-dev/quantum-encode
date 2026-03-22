@@ -32,7 +32,7 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/files/ab2ad88d-ccbc-4aec-9035-6216ed278924.jpg"
+              src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/files/54ec2154-27a9-4a97-b29c-db207723f223.jpg"
               alt="Женский круг на ретрите"
               className="absolute inset-0 w-full h-full object-cover"
             />
