@@ -47,7 +47,7 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Наша философия
+              О ретрите
             </p>
 
             <h2
@@ -55,10 +55,10 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Искусство
-              <span className="italic"> осознанной</span>
+              Исцеление
+              <span className="italic"> через тело</span>
               <br />
-              жизни
+              и душу
             </h2>
 
             <div
@@ -67,13 +67,10 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                То, как мы пришли в этот мир, оставляет глубокий отпечаток на всей нашей жизни. Родовой опыт, связь с матерью и первые ощущения безопасности формируют наши базовые стратегии, доверие к миру и способность любить.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                Ретрит даёт уникальную возможность <em className="text-foreground">заново прожить опыт рождения</em> и исцелить старые травмы. Через телесные практики, ритуалы и спонтанный танец вы освободитесь от блоков и наполнитесь силой, радостью и уверенностью.
               </p>
             </div>
 
@@ -84,16 +81,16 @@ export function Philosophy() {
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">5</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Дней практик</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">2</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Ведущих эксперта</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">море</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Место силы</p>
               </div>
             </div>
           </div>

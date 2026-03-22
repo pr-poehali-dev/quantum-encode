@@ -5,9 +5,9 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Wabi</p>
+            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Родиться заново</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Японский минимализм в сочетании со скандинавским теплом.
+              Трансформационный ретрит на море. Перезагрузка силы, уверенности и любви к жизни.
             </p>
           </div>
 
@@ -16,13 +16,13 @@ export function Footer() {
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
             <nav className="flex flex-col gap-3">
               <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
-                Философия
+                О ретрите
               </a>
               <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Услуги
+                Программа
               </a>
               <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Процесс
+                Результаты
               </a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
                 Контакты
@@ -63,9 +63,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Wabi Studio. Все права защищены.
+            &copy; {new Date().getFullYear()} Родиться заново. Все права защищены.
           </p>
-          <p className="text-xs text-muted-foreground">Создано с намерением</p>
+          <p className="text-xs text-muted-foreground">Организатор: Марина · +7 917 353-94-87</p>
         </div>
       </div>
     </footer>
