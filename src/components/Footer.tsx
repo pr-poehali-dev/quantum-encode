@@ -30,34 +30,7 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Social */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Соцсети</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Pinterest
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Telegram
-              </a>
-            </nav>
-          </div>
 
-          {/* Legal */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Документы</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Политика
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Условия
-              </a>
-            </nav>
-          </div>
         </div>
 
         {/* Bottom Bar */}
