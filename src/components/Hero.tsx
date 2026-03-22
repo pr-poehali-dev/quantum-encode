@@ -19,7 +19,7 @@ export function Hero() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Трансформационный ретрит · 29 апреля — 3 мая
+          Трансформационный ретрит · 29 апреля — 3 мая &nbsp;|&nbsp; 4 мая — 7 мая
         </p>
 
         {/* Main Headline */}
