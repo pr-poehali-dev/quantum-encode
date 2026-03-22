@@ -10,10 +10,10 @@ const facilitators = [
   },
   {
     name: "Анна Мустафина",
-    role: "Фасилитатор спонтанного танца",
+    role: "Врач акушер-гинеколог",
     description:
       "Ведущая женских кругов и практик спонтанного движения. Помогает раскрыть внутреннюю силу через тело, танец и глубинный контакт с собой.",
-    image: "https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/c28afe6e-3c06-4295-90e7-a31a59225435.png",
+    image: "https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/ac3a7778-04f5-4209-9a76-7d6e62ac0189.png",
   },
 ]
 
