@@ -32,8 +32,8 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/bucket/e425fc4a-48f4-4899-afed-701ccce5737c.jpg"
-              alt="Телесные практики на ретрите"
+              src="https://cdn.poehali.dev/projects/20898a25-bccd-46cc-8908-9dd3a278e425/files/ab2ad88d-ccbc-4aec-9035-6216ed278924.jpg"
+              alt="Женский круг на ретрите"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Overlay accent */}
@@ -89,7 +89,7 @@ export function Philosophy() {
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Ведущих эксперта</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">море</p>
+                <p className="font-serif text-2xl md:text-3xl text-sage leading-tight">горы, водопады, море</p>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Место силы</p>
               </div>
             </div>
