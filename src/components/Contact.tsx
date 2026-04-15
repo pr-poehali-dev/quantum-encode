@@ -97,7 +97,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Даты</p>
-                <p className="text-foreground">29 апреля — 3 мая · 4 мая — 7 мая</p>
+                <p className="text-foreground">20 сентября — 24 сентября</p>
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Стоимость</p>
